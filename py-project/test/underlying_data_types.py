@@ -66,20 +66,28 @@ print(10/3) # 小数：数据范围是无限的，整数：在某一个特定的
 # print(w[:])  # 从头到结尾
 # print(w[-5:-3])  # 倒数切片
 
-# (3)字符串的常规操作
-# 字符串的操作一般不会对原字符串产生影响，一般是返回一个新字符串
-#         1.字符串大小写转换
-r = 'python yes!'
-print(r.capitalize(), '第一个单词的首字母大写')  # 第一个单词的首字母大写
+# # (3)字符串的常规操作
+# # 字符串的操作一般不会对原字符串产生影响，一般是返回一个新字符串
+# #         1.字符串大小写转换
+# r = 'python yes!'
+# print(r.capitalize(), '第一个单词的首字母大写')  # 第一个单词的首字母大写
+#
+# r1 = 'I have how money'
+# print(r1.title(), '每个单词的首字母大写')  # 每个单词的首字母大写
+#
+# r2 = 'I HAVE HOW MONEY'
+# print(r2.lower(), '大写转小写')  # 大写转小写
+#
+# r3 = 'i have how noney'
+# print(r3.upper(), '小写转大写')  # 小写转大写
+#
+# # 大小写转换，常用在验证码转化校验
 
-r1 = 'I have how money'
-print(r1.title(), '每个单词的首字母大写')  # 每个单词的首字母大写
+# (4)字符串的切割和替换
+# strip() 去除字符串左右两端的空白符（空格， \t, \n）
+r4 = '   这段字符串   有  好多  空格！    '
+print(r4.strip())
 
-r2 = 'I HAVE HOW MONEY'
-print(r2.lower(), '大写转小写')  # 大写转小写
-
-r3 = 'i have how noney'
-print(r3.upper(), '小写转大写')  # 小写转大写
-
-# 大小写转换，常用在验证码转化校验
-
+# replace(old, new) 字符串替换
+r5 = '   这段字符串   拿来  替换  空格的喔！    '
+print(r5.replace(' ', ''))
