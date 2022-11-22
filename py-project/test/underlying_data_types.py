@@ -91,3 +91,7 @@ print(r4.strip())
 # replace(old, new) 字符串替换
 r5 = '   这段字符串   拿来  替换  空格的喔！    '
 print(r5.replace(' ', ''))
+
+# split() 字符串切割
+r6 = 'javascript_java_python_go'
+print(r6.split('_'))  # 切割之后的结果会放在列表当中
