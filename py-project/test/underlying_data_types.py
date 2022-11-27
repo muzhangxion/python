@@ -83,15 +83,17 @@ print(10/3) # 小数：数据范围是无限的，整数：在某一个特定的
 #
 # # 大小写转换，常用在验证码转化校验
 
-# (4)字符串的切割和替换
-# strip() 去除字符串左右两端的空白符（空格， \t, \n）
-r4 = '   这段字符串   有  好多  空格！    '
-print(r4.strip())
+# # (4)字符串的切割和替换
+# # strip() 去除字符串左右两端的空白符（空格， \t, \n）
+# r4 = '   这段字符串   有  好多  空格！    '
+# print(r4.strip())
+#
+# # replace(old, new) 字符串替换
+# r5 = '   这段字符串   拿来  替换  空格的喔！    '
+# print(r5.replace(' ', ''))
+#
+# # split() 字符串切割
+# r6 = 'javascript_java_python_go'
+# print(r6.split('_'))  # 切割之后的结果会放在列表当中
 
-# replace(old, new) 字符串替换
-r5 = '   这段字符串   拿来  替换  空格的喔！    '
-print(r5.replace(' ', ''))
-
-# split() 字符串切割
-r6 = 'javascript_java_python_go'
-print(r6.split('_'))  # 切割之后的结果会放在列表当中
+# (5)字符串的查找和判断
